@@ -5,11 +5,13 @@ if [ -f $file ];
 then
 echo File is present in your home directory
  #If the file is present then it shows the content inside the file
+echo ""
+echo The content inside the file is:
 cat $file
 else
 echo File is not present in your home directory
- <<madhav
- If the file is not present in your home directory then it will create the file by the name you searched
- madhav
+<<madhav
+If the file is not present in your home directory then it will create the file by the name you searched
+madhav
 touch $file
 fi
