@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "Please enter the name of the file that you want to search in your home directory that file is present or not:"
+read file
+if [ -f $file ];
+then
+echo File is present in your home directory
+ #If the file is present then it shows the content inside the file
+cat $file
+else
+echo File is not present in your home directory
+ <<madhav
+ If the file is not present in your home directory then it will create the file by the name you searched
+ madhav
+touch $file
+fi
