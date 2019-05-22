@@ -1,0 +1,36 @@
+#!/bin/bash
+
+echo Please enter the year u want to know which team has won the IPL Trophy:
+
+read year
+
+case $year in
+
+2008)echo "Rajasthan Royals won the 2008 IPL Chmapionship";;
+
+2009)echo "Deccan Chargers won the 2009 IPL Chmapionship";;
+
+2010)echo "Chennai Super Kings won the 2010 IPL Chmapionship";;
+
+2011)echo "Chennai Super Kings won the 2011 IPL Championship for the 2nd time";;
+
+2012)echo "Kolkata Knight Riders won the 2012 IPL Championship";;
+
+2013)echo "Mumbai Indians won the 2013  Championship";;
+
+2014)echo "Kolkata Knight Riders won the IPL Championshipn for the 2nd time";;
+
+2015)echo "Mumbai Indians won the IPL Championship for the 2nd time";;
+
+2016)echo "Sunrisers Hyderabad  won the IPL Championship for the 1st time";;
+
+2017)echo "Mumbai Indians won the IPL Championship for the 3rd time";;
+
+2018)echo "Chennai Super Kings won the IPL Championship for the 3rd time";;
+
+2019)echo "The Final is yet to be held";;
+
+*)echo "In that year IPL is not started";;
+
+esac
+
