@@ -6,7 +6,7 @@ if [ $tool == ant ];
     echo "It is a Open-source Java based build tool
 Vendor:Apache Software Foundation
 It's default file name is:build.xml
-Current Version:1.10.5
+Current Version:1.10.6 & 1.9.14
 Acronym for ANT is Another Neat Tool
 In case of ANT,Developer have to write the code from scratch
 Variable name while setting the class path:ANT_HOME
@@ -43,13 +43,13 @@ Default Port Number:8080
 It is platform independent in case of Operating System
 Command to start the Tomcat Server:In Windows(catalina.bat start,startup.bat start),In linux(catalina.sh start,startup.sh start)
 Important folders in Tomcat Software:
- bin:used to start and stop the tomcat server
- conf:1.server.xml:
+ *bin:used to start and stop the tomcat server
+ *conf:1.server.xml:
           used to change the port number of tomcat server
       2.tomcat-users.xml:
           used for creating the credentials which will help the user while logging into the tomcat server
- webapps:used for deploying the applications
- logs:used to check whether tomcat server is started or not
+ *webapps:used for deploying the applications
+ *logs:used to check whether tomcat server is started or not
 Various Web Servers are:
   1.Nginx
   2.Http Server
@@ -63,13 +63,13 @@ In Wildfly Server,We can deploy both Web-applications(.war) and Enterprise-appli
 Default Port Number:8080
 It is platform independent in case of Operating System
 Command to start the Wildfly Server:In windows(standalone.bat),In Linux(sh standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0)
-                                                        |-->configuration(standalone.xml)
-  Important Folders in Wildfly Software:bin,standalone--|
-                                                        |-->deployments
+                                                      |-->configuration(standalone.xml)
+Important Folders in Wildfly Software:bin,standalone--|
+                                                      |-->deployments
 
-     bin:used to start and stop Wildfly Server
-     standalone:configuration-->standalone.xml==>used to change the port number of Wildfly Server
-     deployments  -->used for deploying the applications
+ *bin:used to start and stop Wildfly Server
+ *standalone:configuration-->standalone.xml==>used to change the port number of Wildfly Server
+            deployments  -->used for deploying the applications
 Various Application Servers are:
   1.Weblogic
   2.Glassfish
