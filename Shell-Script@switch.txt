@@ -1,0 +1,44 @@
+#!/bin/bash
+echo "Please enter the name of the DevOps Tool that u want to know about:"
+read DevOps
+case $DevOps in
+ant)echo "It is a Open-source Java based build tool
+It's default file name is:build.xml
+Current Version:1.10.5
+Variable name while setting the class path:ANT_HOME
+For checking the Ant version,Type:ant -version
+It is platform Independent in case of Operating System";;
+
+maven)echo "It is a Open-source Java based build tool
+It's default file name is:pom.xml
+Current Version:3.6.1
+Variable name while setting the class path:M2_HOME
+For checking the Maven version,Type:mvn -version
+It is platform Independent in case of Operating System";;
+
+tomcat)echo "It is a Java based Open Source Web server or Servlet Container used to deploy and running the applications
+Vendor:Apache Software Foundation
+Current Version:9.0.19
+In Tomcat,We can only deploy Web-applications(.war package)
+Default Port Number:8080
+It is platform independent in case of Operating System
+Command to start the Tomcat Server:In Windows(catalina.bat start,startup.bat start),In linux(catalina.sh start,startup.sh start)";;
+
+wildfly)echo "It is a Java based Open-Source and Free type Application Server used for deploying the applicaitions
+Current Version:16.0.0.Final
+In Wildfly Server,We can deploy both Web-applications(.war) and Enterprise-applications(.ear)
+Default Port Number:8080
+It is platform independent in case of Operating System
+Command to start the Wildfly Server:In windows(standalone.bat),In Linux(sh standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0)";;
+
+sonarqube)echo "It is Java based Open-Source(For some Programming Languages) Code Quality Analyzing Tool
+Current Version:Sonarqube-7.7
+Default Port Number:9000
+It will continously analyze and measure the quality of source code and will generate a html report if there are any issuesfound.
+Sonarqube has its own internal database called H2
+It supports multiple-databases such as Mysql,Oracle,Microsoft SQL Server,PostgreSQL..
+It is Platform Independent in case of Operating Systems";;
+
+*)echo entered tool is not defined in the script;;
+
+esac

@@ -1,0 +1,64 @@
+#!/bin/bash
+echo "Please enter the name of the Cricket Team that u want to know about their performance in the World Cup Tournament:"
+read team
+if [ $team == WestIndies ];
+ then
+  echo "Two times WestIndies won the World Cup"
+  echo "Captain:Clive Lloyd"
+  echo "Years:1975 & 1979"
+
+elif [ $team == India ];
+ then
+  echo "Two times India won the World Cup"
+  echo "Captain:Kapil Dev(1983)"
+  echo "Captain:MS.Dhoni(2011)"
+
+elif [ $team == Australia ];
+ then
+  echo "Five times Australia won the World Cup"
+  echo "Captain:Allan Border(1987)"
+  echo "Captain:Steve Waugh(1999)"
+  echo "Captain:Ricky Pointing(2003 & 2007)"
+  echo "Captian:Michael Clarke(2015)"
+
+elif [ $team == Pakistan ];
+ then
+  echo "Pakistan Managed to win a World Cup Once in their Two World Cup Final Appearances(1992,1999)"
+  echo "Captain:Imran Khan"
+  echo "Year:1992"
+
+elif [ $team == SriLanka ];
+ then
+  echo "SriLanka Managed to win a World Cup Once in their Three World Cup Final Appearances(1996,2007,2011) "
+  echo "Captain:Arjuna Ranatunga"
+  echo "Year:1996"
+
+elif [ $team == England ];
+then
+  echo "They Mangaged to Entered into the Finals of World Cup for Three times(1979,1987,1992)"
+  echo "But they did not Won any World Cup Yet"
+
+elif [ $team == SouthAfrica ];
+ then
+  echo "First they had to reach the final in order to win a World Cup"
+  echo "They reached the semi-final for the first time in 2015 World Cup under the Captaincy of AB Devilliers"
+
+elif [ $team == NewZealand ];
+ then
+  echo "They reached the Semi-Finals Five Times(1975,1979,1992,1999,2011)"
+  echo "They managed to entered into the finals of ICC CRICKET WORLD CUP 2015 under the Captaincy of Brendon MCcullum but failed to win the World Cup as they lost to Australia"
+
+elif [ $team == Bangaldesh ];
+ then
+  echo "They managed to qualify for the quarter-finals for the 1st time in the World Cup 2015"
+  echo "But failed to win against India"
+
+elif [ $team == Afghanistan ];
+then
+echo "They are yet to reach the Quarter-finals"
+
+else
+  echo "Entered Team Name still not qualified for the Quarter-finals "
+fi
+
+
