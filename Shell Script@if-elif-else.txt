@@ -46,7 +46,7 @@ Important folders in Tomcat Software:
  *bin:used to start and stop the tomcat server
  *conf:1.server.xml:
           used to change the port number of tomcat server
-      2.tomcat-users.xml:
+       2.tomcat-users.xml:
           used for creating the credentials which will help the user while logging into the tomcat server
  *webapps:used for deploying the applications
  *logs:used to check whether tomcat server is started or not
