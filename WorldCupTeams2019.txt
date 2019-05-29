@@ -41,7 +41,9 @@ then
 elif [ $team == SouthAfrica ];
  then
   echo "First they had to reach the final in order to win a World Cup"
-  echo "They reached the semi-final 2 times in 2007 & 2015 World Cup under the Captaincy of Graeme Smith and AB Devilliers"
+  echo "They reached semi-final's in 2007 & 2015 World Cup"
+  echo "In 2007 World Cup Semi-final,They lost to Australia by setting a target of 150 in 50 overs"
+  echo "In 2015 World Cup Semi-final,They Played Well but the heroics of Grant Elliot Won the game for NewZealand"
 
 elif [ $team == NewZealand ];
  then
