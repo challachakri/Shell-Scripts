@@ -41,11 +41,11 @@ then
 elif [ $team == SouthAfrica ];
  then
   echo "First they had to reach the final in order to win a World Cup"
-  echo "They reached the semi-final for the first time in 2015 World Cup under the Captaincy of AB Devilliers"
+  echo "They reached the semi-final 2 times in 2007 & 2015 World Cup under the Captaincy of Graeme Smith and AB Devilliers"
 
 elif [ $team == NewZealand ];
  then
-  echo "They reached the Semi-Finals Five Times(1975,1979,1992,1999,2011)"
+  echo "They reached the Semi-Finals Six Times(1975,1979,1992,1999,2007,2011)"
   echo "They managed to entered into the finals of ICC CRICKET WORLD CUP 2015 under the Captaincy of Brendon MCcullum but failed to win the World Cup as they lost to Australia"
 
 elif [ $team == Bangaldesh ];
