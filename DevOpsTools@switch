@@ -4,7 +4,7 @@ read DevOps
 case $DevOps in
 ant)echo "It is a Open-source Java based build tool
 It's default file name is:build.xml
-Current Version:1.10.5
+Current Version:1.10.6 & 1.9.14
 Variable name while setting the class path:ANT_HOME
 For checking the Ant version,Type:ant -version
 It is platform Independent in case of Operating System";;
@@ -18,14 +18,14 @@ It is platform Independent in case of Operating System";;
 
 tomcat)echo "It is a Java based Open Source Web server or Servlet Container used to deploy and running the applications
 Vendor:Apache Software Foundation
-Current Version:9.0.19
+Current Version:9.0.20
 In Tomcat,We can only deploy Web-applications(.war package)
 Default Port Number:8080
 It is platform independent in case of Operating System
 Command to start the Tomcat Server:In Windows(catalina.bat start,startup.bat start),In linux(catalina.sh start,startup.sh start)";;
 
 wildfly)echo "It is a Java based Open-Source and Free type Application Server used for deploying the applicaitions
-Current Version:16.0.0.Final
+Current Version:17.0.0.Beta1
 In Wildfly Server,We can deploy both Web-applications(.war) and Enterprise-applications(.ear)
 Default Port Number:8080
 It is platform independent in case of Operating System
