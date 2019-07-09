@@ -1,0 +1,61 @@
+#!/bin/bash
+
+echo Please enter the year u want to know which team has won the IPL Trophy:
+
+read year
+
+case $year in
+
+2008)echo "Rajasthan Royals won the 2008 IPL Chmapionship
+Captain:Shane Warne
+Opponent in the Final:Chennai Super Kings";;
+
+2009)echo "Deccan Chargers won the 2009 IPL Chmapionship
+Captain:Adam Gilchrist
+Opponent in the Final:Royal Challengers Bangalore";;
+
+2010)echo "Chennai Super Kings won the 2010 IPL Chmapionship
+Captain:MS.Dhoni
+Opponent in the Final:Mumbai Indians";;
+
+2011)echo "Chennai Super Kings won the 2011 IPL Championship for the 2nd time
+Captain:MS.Dhoni
+Opponent in the Final:Royal Challengers Bangalore";;
+
+2012)echo "Kolkata Knight Riders won the 2012 IPL Championship
+Captain:Gautam Gambhir
+Opponent in the Final:Chennai Super Kings";;
+
+2013)echo "Mumbai Indians won the 2013  Championship
+Captain:Rohit Sharma
+Opponent in the Final:Chennai Super Kings";;
+
+2014)echo "Kolkata Knight Riders won the IPL Championshipn for the 2nd time
+Captain:Gautam Gambhir
+Opponent in the Final:Kings X1 Punjab";;
+	
+2015)echo "Mumbai Indians won the IPL Championship for the 2nd time
+Captain:Rohit Sharma
+Opponent in the Final:Chennai Super Kings";;
+
+2016)echo "Sunrisers Hyderabad  won the IPL Championship for the 1st time
+Captain:David Warner
+Opponent in the Final:Royal Challengers Bangalore";;
+
+2017)echo "Mumbai Indians won the IPL Championship for the 3rd time
+Captain:Rohit Sharma
+Opponent in the Final:Rising Pune Supergiants";;
+
+2018)echo "Chennai Super Kings won the IPL Championship for the 3rd time
+Captain:MS.Dhoni
+Opponent in the Final:Sunrisers Hyderabad";;
+
+2019)echo "Mumbai Indians Won the 2019 IPL Trophy for the 4th time
+Most by any team in the History of IPL
+Captain:Rohit Sharma
+Opponent in the Final:Chennai Super Kings";;
+
+*)echo "In that year IPL Tournament is not held"
+
+esac
+
