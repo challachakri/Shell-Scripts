@@ -1,0 +1,32 @@
+#!/bin/bash
+echo "please enter the number that you want to perform aritmetic operaions:"
+read var
+case $var in 
+1)echo enter the 1st value:
+  read a
+  echo enter the 2nd value:
+  read b
+  echo The addition of 1st and 2nd value is:`expr $a + $b`;;
+2)echo enter the 1st value:
+  read a
+  echo enter the 2nd value:
+  read b
+  echo The subtraction of 1st and 2nd value is:`expr $a - $b`;;
+3)echo enter the 1st value:
+  read a
+  echo enter the 2nd value:
+  read b
+  echo The multiplication of 1st and 2nd value is:`expr $a \* $b`;;
+4)echo enter the 1st value:
+  read a
+  echo enter the 2nd value:
+  read b
+  echo The division of 1st and 2nd value is:`expr $a / $b`;;
+5)echo enter the 1st value:
+  read a
+  echo enter the 2nd value:
+  read b
+  echo The result of 1st and 2nd value is:`expr $a % $b`;;
+*)echo Entered number is not defined in the script
+  echo There are only 5 arithmetic operaitons we can perform{+,-,\*,/,%};;
+esac
