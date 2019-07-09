@@ -1,0 +1,8 @@
+FROM tomcat
+MAINTAINER madhavdocker453 <madhavguvvuala@gmail.com>
+    # Copying the "war" package to the webapps folder for deploying
+COPY maven-web-application.war /usr/local/tomcat/webapps
+    # Copying context.xml in order to ask username and password
+COPY context.xml /usr/local/tomcat/webapps/manager/META-INF
+    # Copying tomcat-users.xml in order to pass the credentials{username & password}
+COPY tomcat-users.xml /usr/local/tomcat/conf

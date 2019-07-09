@@ -1,0 +1,4 @@
+FROM tomcat:9.0.21
+ # Default Port Number for Tomcat is 8080
+MAINTAINER madhavdocker453 <madhavguvvuala@gmail.com>
+EXPOSE 8090

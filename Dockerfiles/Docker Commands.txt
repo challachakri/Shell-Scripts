@@ -1,0 +1,81 @@
+version checking commands:
+=========================
+ docker --version
+ docker -v
+ docker version (docker client and docker server/daemon         versions)
+ docker info
+
+Image realted commands:
+=======================
+ docker images (or) docker image ls (or) docker images -a (or) docker images --all
+ docker pull <image-name>
+ docker push <image-name> 
+      {For pushing the docker image into dockerhub login is required:
+            docker login
+            username:
+            password:                             
+      }
+ docker search <image-name>
+ docker history <image-name>
+ docker inspect <image-name>
+ docker images -q (or) docker images -aq
+ docker image prune -a (or) docker image prune --all
+ docker rmi <image-name>
+ docker rmi <image-name> <image-name>
+ docker rmi <image-name> <image-name> ...<image-name>
+ docker rmi $(docker images -aq)
+ docker rmi -f $(docker images -aq)
+ docker tag <image-id> <image-name>
+
+Container realted commands:
+==========================
+ docker container ls
+ docker ps
+ docker ps -a
+ docker run <image-name> {eg:hello-world}
+ docker run -it <image-name>{eg:centos}
+ docker run -d <image-name>
+ docker run -d -p hostportnumber{Can be changeable}:serverportnumber{Cannote be changeable} <image-name>
+ docker run -d -p xxxx(eg:8090):yyyy(8080) --name "containername" <image-name>{eg:tomcat}
+ docker start cid
+ docker stop cid
+ docker restart cid
+ docker pause cid
+ docker unpause cid
+ docker exec -it cid /bin/bash
+ docker attach cid
+ docker commit cid
+ docker logs cid
+ docker container prune/docker container prune -f (or) docker container prune --force
+ docker rename ocn(old container-name) ncn(new container-name)
+ docker inspect cid/cn
+ docker stats cid/cn
+ docker top cid/cn
+ docker rm <container-id>
+ docker rm <container-id:1> <container-id:2>
+ docker rm <container-id:1> <container-id:2> .. <container-id:n>
+ docker rm $(docker ps -aq)
+ docker rm -f $(docker ps -aq)
+ docker kill cid/cn
+ 
+File related commands:
+======================
+ docker build .{path of Dockerfile}
+ docker build -t <image-name>{with that name image will be created} .
+ docker build -f <customname-dockerfile> .
+ docker build -f <customname-dockerfile> -t <image-name> .
+ 
+Dockerfile realted keywords:
+============================
+ FROM
+ MAINTAINER
+ LABEL
+ VOLUME
+ WORKDIR
+ RUN
+ ENV
+ ENTRYPOINT
+ EXPOSE
+ CMD
+ 
+ 

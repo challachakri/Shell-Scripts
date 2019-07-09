@@ -1,0 +1,7 @@
+FROM ubuntu
+MAINTAINER madhavdocker453 <madhavguvvuala@gmail.com>
+RUN apt-get update -y && apt-get install wget -y
+RUN apt-get install unzip git -y
+RUN touch /opt/madhav \
+&& echo 'hai Dockerfile' >> /opt/madhav
+RUN wget <application-url>
