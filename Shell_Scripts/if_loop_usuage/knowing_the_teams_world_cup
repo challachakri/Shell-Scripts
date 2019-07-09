@@ -32,7 +32,7 @@ elif [ $team == SouthAfrica ];
 
 elif [ $team == NewZealand ];
  then
-  echo "They managed to entered into the finals of ICC CRICKET WORLD CUP 2015 but failed to win the World Cup as they los t to Australia"
+  echo "They managed to entered into the finals of ICC CRICKET WORLD CUP 2015 but failed to win the World Cup as they lost to Australia"
 
 elif [ $team == Bangaldesh ];
  then

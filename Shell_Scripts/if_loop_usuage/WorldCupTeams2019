@@ -47,7 +47,7 @@ elif [ $team == SouthAfrica ];
 
 elif [ $team == NewZealand ];
  then
-  echo "They reached the Semi-Finals Seven Times(1975,1979,1992,1999,2007,2011,2015)"
+  echo "They reached the Semi-Finals Seven Times(1975,1979,1992,1999,2007,2011,2015,2019)"
   echo "They managed to entered into the finals of ICC CRICKET WORLD CUP 2015 under the Captaincy of Brendon MCcullum but failed to win the World Cup as they lost to Australia"
 
 elif [ $team == Bangaldesh ];
