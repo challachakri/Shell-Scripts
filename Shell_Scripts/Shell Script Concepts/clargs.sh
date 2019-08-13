@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 echo The script file name is:$0
 echo The 1st argument that i am passing through cmd is:$1
 echo The 2nd argument that i am passing through cmd is:$2
