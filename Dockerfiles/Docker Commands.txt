@@ -2,7 +2,7 @@ version checking commands:
 =========================
  docker --version
  docker -v
- docker version (docker client and docker server/daemon         versions)
+ docker version (docker client and docker server/daemon versions)
  docker info
 
 Image realted commands:
