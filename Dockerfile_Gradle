@@ -1,0 +1,19 @@
+FROM centos
+MAINTAINER madhavdocker453 <madhavguvvuala@gmail.com>
+RUN yum install wget unzip  git -y \
+&& cd /opt && wget http://mithuntechnologies.com/jdk-8u211-linux-x64.rpm && yum install jdk-8u211-linux-x64.rpm -y \
+&& wget https://services.gradle.org/distributions/gradle-5.0-bin.zip && unzip gradle-5.0-bin.zip \
+&& git clone https://github.com/madhav411/gradle-web-app.git
+ENV JAVA_HOME=/usr/java/jdk1.8.0_211-amd64
+ENV PATH=$PATH:$JAVA_HOME/bin
+ENV GRADLE_HOME=/opt/gradle-5.0
+ENV PATH=$PATH:$GRADLE_HOME/bin
+ENV CATALINA_HOME=/opt/apache-tomcat-8.5.43
+ENV PATH=$PATH:$CATALINA_HOME/bin
+RUN cd /opt/gradle-web-app  && gradle clean build \
+&& cd /opt && wget http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.43/bin/apache-tomcat-8.5.43.zip && unzip apache-tomcat-8.5.43.zip \
+&& cd /opt/apache-tomcat-8.5.43/bin && chmod u+x *.sh \
+&& cp /opt/gradle-web-app/build/libs/*.war /opt/apache-tomcat-8.5.43/webapps
+WORKDIR $CATALINA_HOME
+ENTRYPOINT ["sh"]
+CMD ["catalina.sh","run"]
